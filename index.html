@@ -62,9 +62,31 @@
 </div>
     <script>
       function mudarCor() {
-        document.body.style.backgroundColor = 
-          document.body.style.backgroundColor === 
-      "black" ? "purple" : "black";
+        let corAtual = 
+      document.body.style.backgroundColor;
+
+        if (corAtual === "black") {
+          document.body.style.backgroundColor = 
+      "purple";
+        } else if (corAtual === "purple") {
+          document.body.style.backgroundColor = 
+      "blue";
+        } else if (corAtual === "blue") {
+          document.body.style.backgroundColor = 
+      "red";
+        } else if (corAtual === "red") { 
+          document.body.style.backgroundColor = 
+      "orange";
+        } else if (corAtual === "orange") { 
+          document.body.style.backgroundColor = 
+      "green";
+        } else if (corAtual === "green") { 
+          document.body.style.backgroundColor = 
+      "yellow";
+        } else {
+          document.body.style.backgroundColor = 
+      "black";
+        }
       }
     </script>
 </body>
