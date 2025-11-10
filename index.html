@@ -87,7 +87,19 @@
           document.body.style.backgroundColor = 
       "black";
         }
+        
+        localStorage.setItem("corFundo",
+      document.body.style.backgroundColor);
       }
+
+      window.onload = function() { 
+        const corSalva = 
+      localStorage.getItem("corFundo");
+        if (corSalva) { 
+          document.body.style.backgroundColor = 
+      corSalva;
+        } 
+      };
     </script>
 </body>
 </html>
