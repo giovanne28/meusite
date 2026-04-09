@@ -25,47 +25,30 @@
         border-radius: 5px;
     }
 
-    .Lista-jogos ol {
-        list-style-position: inside;
-        margin-left: 20px;
-    }
-
     .instalar {
         margin-top: 50px;
         text-align: left;
+    }
+
+    .butao-mine {
+    	margin: 10px;
+    	padding: 10px 14px;
+    	background-color: #008000;
+    	color: black;
+    	border: 2px solid black;
+    	border-radius: 5px;
     }
    </style>
 </head>
 <body>
     <div class="centralizado">
-        <h1>Bem Vindo!</h1>
-        <p>Criei essa página com sugestões de jogos para as call</p><br>
-        <p>Só pra não ficar na dúvida</p><br>
+        <h1>The trio</h1><br>
+        <h2>Página feita inteiramente voltada para nossas calls</h2><br>
+        <p></p><br>
         <button onclick="mudarCor()">Mudar cor de fundo</button>
     </div><br>
- <div class="Lista-jogos">
-    <ol>
-        <li>Clash royale</li>
-        <li>Uno</li>
-        <li>Roblox</li>
-        <li>Stumble guys</li>
-        <li>Brawl stars, porque não?</li>
-        <li>Stop</li>
-        <li>Gartic</li>
-        <li>Free fire</li>
-    </ol>
- </div><br>
 <div class="instalar">
-    <h1>Caso não tenha instalado alguns jogos</h1>
-    <a href="https://play.google.com/store/apps/details?id=com.kitkagames.fallbuddies"><button>Stumble guys</button></a>
-    <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars"><button>Brawl stars</button></a>
-    <a href="https://play.google.com/store/apps/details?id=com.gartic.StopotS"><button>Stop</button></a>
-    <a href="https://play.google.com/store/apps/details?id=io.gartic.Gartic"><button>Gartic</button></a>
-    <a href="https://play.google.com/store/apps/details?id=com.dts.freefireth"><button>Free fire</button></a><br>
-    <p>Clique e descubra o que é 👇</p><br>
-    <button onclick="rodarCodigo()">Brawl Stars</button><br>
-    <p>Clique e descubra o que é 👇</p><br>
-    <button onclick="rodarCodigoII()">Clash Royale</button>
+    <button onclick="rodarCodigo()">Brawl Stars</button>
 </div>
     <script>
       function mudarCor() {
@@ -241,156 +224,6 @@ if (
   classe === "Gigi"
 ) {
   alert("Classe: Algoz🗡");
-}
-}
-</script>
-  <script>
- function rodarCodigoII() {
- // Clash Royale
-
-let arena = prompt("Digite qualquer arena:");
-
-// Normalizar para evitar problema com maiúsculas
-arena = arena.toLowerCase();
-
-if (arena === "campo de treino") {
-  alert(`Campo de Treino 🎯
-
-Cartas desbloqueadas:        Raridade:
-
-Flechas                      comum 🔵
-Servos                       comum 🔵
-Arqueiras                    comum 🔵
-Cavaleiro                    comum 🔵
-Bola de Fogo                 raro  🟠
-Mini Pekka                   raro  🟠
-Mosqueteira                  raro  🟠
-Gigante                      raro  🟠
-
-Tropa de Torre 🏛:           Raridade:
-
-Princesa da Torre            comum 🔵`);
-}
-
-if (arena === "arena 1") {
-  alert(`Estádio Goblin 👽
-
-🏆 0
-
-Cartas desbloqueadas:        Raridade:
-
-Goblins Lanceiros            comum 🔵
-Goblins                      comum 🔵
-Jaula de Goblin              raro  🟠
-Cabana de Goblins            raro  🟠`);
-}
-
-if (arena === "arena 2") {
-  alert(`Fosso dos Ossos ☠️
-
-🏆 300
-
-Cartas desbloqueadas:        Raridade:
-
-Bombardeiro                  comum 🔵
-Esqueletos                   comum 🔵
-Lápide                       raro  🟠
-Valquíria                    raro  🟠`);
-}
-
-if (arena === "arena 3") {
-  alert(`Torneio Bárbaro ⚔️
-
-🏆 600
-
-Cartas desbloqueadas:        Raridade:
-
-Canhão                       comum 🔵
-Bárbaros                     comum 🔵
-Megasservo                   raro  🟠
-Aríete de Batalha            raro  🟠`);
-}
-
-if (arena === "arena 4") {
-  alert(`Vale dos Feitiços 🧙‍♂️
-
-🏆 1000
-
-Cartas desbloqueadas:        Raridade:
-
-Espírito Elétrico            comum 🔵
-Dragões Esqueleto            comum 🔵
-Espírito de Fogo             comum 🔵
-Torre de Bombas              raro  🟠
-Torre Inferno                raro  🟠
-Mago                         raro  🟠`);
-}
-
-if (arena === "arena 5") {
-  alert(`Oficina do Construtor ⚒️
-
-🏆 1300
-
-Cartas desbloqueadas:        Raridade:
-
-Zap                          comum 🔵
-Morteiro                     comum 🔵
-Morcegos                     comum 🔵
-Foguete                      raro  🟠
-Máquina Voadora              raro  🟠
-Corredor                     raro  🟠`);
-}
-
-if (arena === "arena 6") {
-  alert(`Parquinho da P.E.K.K.A 🤖
-
-🏆 1600
-
-Cartas desbloqueadas:        Raridade:
-
-Barril de Goblins            épico 🟣
-Guardas                      épico 🟣
-Bebê Dragão                  épico 🟣
-Exército de Esqueletos       épico 🟣
-Bruxa                        épico 🟣
-Pekka                        épico 🟣`);
-}
-
-if (arena === "arena 7") {
-  alert(`Arena Real 👑
-
-🏆 2000
-
-Cartas desbloqueadas:        Raridade:
-
-Recrutas Reais               comum 🔵
-Gigante Real                 comum 🔵
-Porcos Reais                 raro  🟠
-Três Mosqueteiras            raro  🟠
-Príncipe das Trevas          épico 🟣
-Príncipe                     épico 🟣
-Balão                        épico 🟣`);
-}
-
-if (arena === "arena 8") {
-  alert(`Pico Congelado ❄️
-
-🏆 2300
-
-Cartas desbloqueadas:        Raridade:
-
-Bola de Neve                 comum 🔵
-Espírito de Gelo             comum 🔵
-Curadora Guerreira           raro  🟠
-Golem de Gelo                raro  🟠
-Vinhas                       épico 🟣
-Relâmpago                    épico 🟣
-Gelo                         épico 🟣
-Esqueleto Gigante            épico 🟣
-
-Tropa de Torre 🏛:           Raridade:
-
-Canhoneiro                   épico 🟣`);
 }
 }
 </script>
