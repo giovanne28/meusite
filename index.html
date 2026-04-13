@@ -48,6 +48,20 @@
         border-radius: 10px;
         padding: 4px;
     }
+
+    #car {
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+        gap: 10px;
+    	padding: 10px
+    }
+
+    #car img {
+    	width: calc(50% - 10px);
+    	border-radius: 10px;
+    	padding: 4px;
+    }
     
    </style>
 </head>
@@ -55,12 +69,13 @@
     <div class="centralizado">
         <h1>The trio</h1><br>
         <h2>Página feita parar recordações das nossas calls </h2><br>
-        <p></p><br>
         <button onclick="mudarCor()">Mudar cor de fundo</button>
     </div><br>
     <div class="butao">
-        <h2>Aba de Minecraft</h2>
-        <button onclick="toggleImagem()">Minecraft</button><br><br>
+        <h2>Aba Minecraft ⛏️</h2>
+        <button onclick="mine()">Minecraft</button><br><br>
+        <h2>Aba Car Parking 🚘</h2>
+        <button onclick="car()">Car Parking</button><br><br>
     </div>     
     <div id="mine" style="display: none;">
         <img src="mine/mine1.jpg">
@@ -76,6 +91,19 @@
         <img src="mine/mine11.jpg">
         <img src="mine/mine12.jpg">
     </div><br>
+    <div id="car" style="display: none;">
+        <img scr="car/car1.jpg">
+        <img scr="car/car2.jpg">
+        <img scr="car/car3.jpg">
+        <img scr="car/car4.jpg">
+        <img scr="car/car5.jpg">
+        <img scr="car/car6.jpg">
+        <img scr="car/car7.jpg">
+        <img scr="car/car8.jpg">
+        <img scr="car/car9.jpg">
+        <img scr="car/car10.jpg">
+        <img scr="car/car11.jpg">
+    </div><br>    
 <div class="instalar">
     <button onclick="rodarCodigo()">Brawl Stars</button>
 </div>
@@ -118,7 +146,7 @@
       }
     </script>
     <script>   
-      function toggleImagem() {
+      function mine() {
       	let mine = document.getElementById("mine");
 
       	if (mine.style.display === "none") {
@@ -128,7 +156,17 @@
       	}
       }
     </script>
+    <script>
+      function car() {
+      	let car = document.getElementById("car");
 
+        if (car.style.display === "none") {
+    		car.style.display = "block";
+        } else {
+    	    car.style.display = "none";
+        }
+      }
+    </script>
     <script>
     function rodarCodigo() {
 
