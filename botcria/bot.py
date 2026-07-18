@@ -19,30 +19,12 @@ async def on_ready():
 
 @bot.command()
 async def oi(ctx):
-    await ctx.send("Olá! Estou funcionando 🤖")
+    await ctx.send("Eae seus comedia 🤖")
     await asyncio.sleep(2)
-    await ctx.send("O que deseja?")
+    await ctx.send("Tudo blz")
 
 @bot.command()
-async def tocar(ctx):
-
-    if ctx.author.voice is None:
-        await ctx.send("Você precisa estar em call jumento")
-        return
-
-    # pega a call onde o usuária ta
-    call = ctx.author.voice.channel
-
-    # bot entra na call
-    voz = await call.connect()
-
-
-    sirius = "'Sirius Theme with Lyrics - Brawl Stars.mp3'"
-
-    voz.play(discord.FFmpegPCMAudio(sirius))
-    await ctx.send("Música tocando")
-
-    while voz.is_playing():
-        await asyncio.sleep(1)
+async def ping(ctx):
+    await ctx.send("pong 🏓")
 
 bot.run(TOKEN)
