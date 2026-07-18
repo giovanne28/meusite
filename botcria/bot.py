@@ -40,6 +40,5 @@ async def tocar(ctx):
 
 voz.play(discord.FFmpegPCMAudio(sirius))
 
-    await ctx.send("Música tocando")
-
+await ctx.send("Música tocando")
 bot.run(TOKEN)
