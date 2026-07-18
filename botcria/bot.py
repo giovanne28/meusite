@@ -36,7 +36,7 @@ async def tocar(ctx):
     # bot entra na call
     voz = await call.connect()
 
-    sirius = "musica.mp3"
+    sirius = "'Sirius Theme with Lyrics - Brawl Stars.mp3'"
 
     voz.play(discord.FFmpegPCMAudio(sirius))
     await ctx.send("Música tocando")
