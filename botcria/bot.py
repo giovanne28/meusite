@@ -30,21 +30,19 @@ async def tocar(ctx):
         await ctx.send("Você precisa estar em call jumento")
         return
 
-    if ctx.voice_cliet:
-        await ctx.voice_client.disconnect()
-
     # pega a call onde o usuária ta
     call = ctx.author.voice.channel
 
     # bot entra na call
     voz = await call.connect()
 
-    while not voz.is_connected():
-        await asyncio.sleep(1)
 
     sirius = "'Sirius Theme with Lyrics - Brawl Stars.mp3'"
 
     voz.play(discord.FFmpegPCMAudio(sirius))
     await ctx.send("Música tocando")
+
+    while viz.is_playing():
+        await asyncio.sleep(1)
 
 bot.run(TOKEN)
