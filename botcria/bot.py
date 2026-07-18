@@ -1,6 +1,6 @@
 import discord
-
 from discord.ext import commands
+import asyncio
 import os
 from dotenv import load_dotenv
 
@@ -36,8 +36,8 @@ async def tocar(ctx):
     # bot entra na call
     voz = await call.connect()
 
-    sirius = "musica.py"
+    sirius = "musica.mp3"
 
-voz.play(discord.FFmpegPCMAudio(sirius))
+    voz.play(discord.FFmpegPCMAudio(sirius))
     await ctx.send("Música tocando")
 bot.run(TOKEN)
